@@ -19,7 +19,7 @@ public class DataTypes {
             if (kasusuji[i].compareTo(BigInteger.valueOf(Long.MIN_VALUE)) >= 0 && kasusuji[i].compareTo(BigInteger.valueOf(Long.MAX_VALUE)) <= 0){
                 System.out.println(kasusuji[i] + " can be fitted in:");
                 if (kasusuji[i].compareTo(BigInteger.valueOf(Byte.MIN_VALUE)) >= 0 && kasusuji[i].compareTo(BigInteger.valueOf(Byte.MAX_VALUE)) <= 0){
-                    System.out.println("* byte");6
+                    System.out.println("* byte");
                 }
                 if (kasusuji[i].compareTo(BigInteger.valueOf(Short.MIN_VALUE)) >= 0 && kasusuji[i].compareTo(BigInteger.valueOf(Short.MAX_VALUE)) <= 0){
                     System.out.println("* short");
