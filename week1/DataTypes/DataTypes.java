@@ -1,4 +1,4 @@
-package week1;
+package week1.DataTypes;
 import java.util.Scanner;
 import java.math.BigInteger;
 
