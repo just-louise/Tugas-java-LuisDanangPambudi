@@ -1,4 +1,4 @@
-package week2;
+package soal1;
 
 class Restaurant {
     private String[] nama_makanan;
