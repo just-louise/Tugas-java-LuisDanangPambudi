@@ -1,6 +1,4 @@
-package soal2.id.ac.polban.employee.model;
-
-import soal2.id.ac.polban.employee.model.Departement.Department;
+package soal2.id.ac.polban.employee.model;;
 
 public class Employee {
     private int id;
@@ -8,6 +6,7 @@ public class Employee {
     private Department department;
     private EmploymentType type;
     private double salary;
+    private static int totalEmployee = 0;
     
     public Employee(int id, String name, Department department, EmploymentType type, double salary) {
         this.id = id;
@@ -15,6 +14,10 @@ public class Employee {
         this.department = department;
         this.type = type;
         this.salary = salary;
+        totalEmployee++;
+    }
+    public static int getTotalEmployee(){
+        return totalEmployee;
     }
  
     public int getId() {

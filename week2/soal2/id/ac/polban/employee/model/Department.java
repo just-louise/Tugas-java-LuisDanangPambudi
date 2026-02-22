@@ -1,6 +1,4 @@
 package soal2.id.ac.polban.employee.model;
-
-public class Departement {
     public class Department {
  private String name;
 
@@ -17,4 +15,3 @@ public class Departement {
  }
 }
 
-}
