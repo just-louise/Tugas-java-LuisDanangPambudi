@@ -14,4 +14,3 @@ package soal2.id.ac.polban.employee.model;
     this.name = name;
  }
 }
-
