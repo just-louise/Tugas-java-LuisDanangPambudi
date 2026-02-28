@@ -6,7 +6,9 @@ public class Restaurant {
     private int[] stok;
     private static byte id = 0;
 
-    public Restaurant() {
+    public Restaurant(
+        
+    ) {
         nama_makanan = new String[10];
         harga_makanan = new double[10];
         stok = new int[10];
@@ -43,9 +45,6 @@ public class Restaurant {
     public int[] getStok(){
         return stok;
     }
-    public byte getId(){
-        return id;
-    }
 
 public void tambahMenuMakanan(String nama, double harga, int stok) {
     this.nama_makanan[id] = nama;
@@ -78,10 +77,10 @@ public void pesanMakanan(int id, int jumlah){
     if (id >= 0 ){
         if (stok[id] >= jumlah) {
             stok[id] -= jumlah;
-            System.out.println("Pesanan berhasil " + nama_makanan[id]);
+            System.out.println("Pesanan " + nama_makanan[id] + " Berhasil " + "Jumlah Pesanan: " + jumlah);
         }
         else{
-            System.out.println("Pesanan tidak berhasil! stok: " + stok[id]);
+            System.out.println("Pesanan melebihi stok! stok: " + stok[id] + " Jumlah Pesanan: " + jumlah);
         }
     }
     else{
