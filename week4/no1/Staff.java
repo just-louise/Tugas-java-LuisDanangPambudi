@@ -9,7 +9,7 @@ public class Staff
     //-----------------------------------------------------------------
     public Staff ()
     {
-        staffList = new StaffMember[6];
+        staffList = new StaffMember[8];
 
         staffList[0] = new Executive ("Sam", "123 Main Line",
                 "555-0469", "123-45-6789", 2423.07);
@@ -23,6 +23,14 @@ public class Staff
                 "555-8374");
         staffList[5] = new Volunteer ("Cliff", "321 Duds Lane",
                 "555-7282");
+        Commission c1 = new Commission("jaya","garut","08897643212","989-32-1233",5000000.0, 1000000.0);
+        Commission c2 = new Commission("iman", "Purbalingga", "088244447777", "888-99-0000", 6000000.0, 1000000.0);
+        c1.addHours(35);
+        c2.addHours(40);
+        c1.addSales(400);
+        c2.addSales(950);
+        staffList[6] = c1;
+        staffList[7] = c2;
 
         ((Executive)staffList[0]).awardBonus (500.00);
         ((Hourly)staffList[3]).addHours (40);
