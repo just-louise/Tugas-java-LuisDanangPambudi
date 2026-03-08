@@ -19,6 +19,6 @@ public class Commission extends Hourly{
     }
     @Override
     public String toString() {
-    return super.toString() + "\ntotal sales: " + TotalSales;    
+    return super.toString() + "total sales: " + TotalSales;    
     }
 }
