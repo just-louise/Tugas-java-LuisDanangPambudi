@@ -1,8 +1,10 @@
+package week4.no2;
 //*****************************************
 // Sphere.java
 //
 // Represents a sphere.
 //*****************************************
+
 public class Sphere extends Shape
 {
     private double radius; //radius in feet

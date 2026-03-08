@@ -1,3 +1,4 @@
+package week4.no2;
 public abstract class Shape {
     protected String shapeName;
 
