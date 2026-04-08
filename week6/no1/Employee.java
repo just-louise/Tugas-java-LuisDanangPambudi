@@ -1,4 +1,4 @@
-package week6;
+package week6.no1;
 
 public class Employee {
     private String nama;
